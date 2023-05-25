@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021 website</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo">McKyle<span>Elago</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li ><a href="#">About</a></li>
+                    <li ><a href="#">Portfolio</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Email Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">I love kpop &amp; kdrama</p>
+                <h1>Maestro of Laziness</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Explore Me</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a video">Watch the video
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>He's a master of relaxation</li>
+                <li>He's a genius at conserving energy</li>
+                <li>A philosophy of leisure</li>
+                <li>He's a minimalist of action</li>
+                <li>He's a master of fine art of doing nothing</li>
+                <li>Laziness in disguise</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+                    <blockquote>
+                        "I've never seen anyone who can relax quite like Mc Kyle. His ability to unwind and recharge is truly remarkable. If you want to learn the art of doing nothing, he's the one to teach you."
+                    </blockquote>
+                    <cite>-Mama</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+        
+                    <blockquote>
+                        "I used to think that being lazy was a bad thing, but Mc Kyle has shown me otherwise. His approach to conserving energy and time has helped me to be more efficient and productive in my own life. He's a true inspiration."
+                    </blockquote>
+                    <cite>-MyOnlyfan</cite>
+                </li>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>
+                        "If you're feeling overwhelmed and stressed out, [Name] is the person you need to talk to. He's a philosopher of leisure and can help you understand the value of rest and relaxation. I always feel more at peace after spending time with him."
+                    </blockquote>
+                    <cite>-Random friend</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="sumbit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15446.692786685124!2d121.0192376156235!3d14.560671655867338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9a9c86d6f5f%3A0xe4015db2927786dc!2sBel-Air%2C%20Makati%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1679913888828!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () =>{
+            nav.classList.add('menu-btn');
+        } )
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn')
+        })
+    </script>
+</body>
+</html>
